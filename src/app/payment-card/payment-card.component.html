@@ -1,0 +1,38 @@
+<div class="container my-5">
+    <h2 class="mb-4">Dados de Pagamento</h2>
+    <form>
+        <div class="mb-3">
+            <label for="cardName" class="form-label">Nome no Cartão</label>
+            <input type="text" class="form-control" id="cardName" placeholder="Nome conforme exibido no cartão">
+        </div>
+        <div class="mb-3">
+            <label for="cardNumber" class="form-label">Número do Cartão</label>
+            <input type="text" class="form-control" id="cardNumber" placeholder="0000 0000 0000 0000">
+        </div>
+        <div class="row g-3">
+            <div class="col-md-6">
+                <label for="expiryMonth" class="form-label">Mês de Expiração</label>
+                <select class="form-select" id="expiryMonth">
+                    <option selected>Escolher...</option>
+                    <option value="01">01 - Janeiro</option>
+                    <option value="02">02 - Fevereiro</option>
+                    <!-- Adicione os demais meses conforme necessário -->
+                </select>
+            </div>
+            <div class="col-md-6">
+                <label for="expiryYear" class="form-label">Ano de Expiração</label>
+                <select class="form-select" id="expiryYear">
+                    <option selected>Escolher...</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <!-- Adicione mais anos conforme necessário -->
+                </select>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="cvv" class="form-label">Código CVV</label>
+            <input type="text" class="form-control" id="cvv" placeholder="123">
+        </div>
+        <button type="submit" class="btn btn-primary">Confirmar Pagamento</button>
+    </form>
+</div>
